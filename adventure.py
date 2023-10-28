@@ -1,35 +1,16 @@
 from pynput.mouse import Button, Controller
-import pygetwindow
 import pyautogui
 import time
 
 mouse = Controller()
 start_time = 0
 continue_buttons = {
-    'Enter Battle': 'imgs/enter_battle.png',
-    'Proceed': 'imgs/proceed.png',
-    'Level up': 'imgs/levelup_close.png', 
-    'Unlock': 'imgs/continue.png', 
-    'Next floor': 'imgs/next_floor.png'
+    'Enter Battle': 'imgs/adventure/enter_battle.png',
+    'Proceed': 'imgs/adventure/proceed.png',
+    'Level up': 'imgs/adventure/levelup_close.png', 
+    'Unlock': 'imgs/adventure/continue.png', 
+    'Next floor': 'imgs/adventure/next_floor.png'
     }
-
-
-def detectGame(windowTitle):
-    '''
-    Detect the game window.
-    '''
-    title = windowTitle
-    try:
-        app_window = pygetwindow.getWindowsWithTitle(title)
-        window_rect = (
-            app_window[0].left, 
-            app_window[0].top, 
-            app_window[0].width, 
-            app_window[0].height
-            )
-        return window_rect
-    except:
-        return None
     
     
 def detect_aventure(region):
@@ -82,23 +63,13 @@ def getElapsedTime():
     return elapsed_time
     
     
-def startAdventureScript(windowTitle):
+def startAdventureScript(region):
     '''
     Start the script.
     
     MAKE SURE that you are on the team building screen of adventure with the red "Enter Battle" button on the bottom right.
     '''
-    if not windowTitle:
-        windowTitle = "POCO F3"
-    region = detectGame(windowTitle)
-    if region:
-        resetStartTime()
-        while True:
-            detect_aventure(region)
-            time.sleep(5.5)
-    else:
-        print("Phone window not found.")
-        input("...")
-                
-                
-                
+    resetStartTime()
+    while True:
+        detect_aventure(region)
+        time.sleep(5.5)      
