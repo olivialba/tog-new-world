@@ -1,6 +1,6 @@
-from adventure import startAdventureScript
-from chaos_trial import startChaosTrialScript
-from detect_game import detectGame
+from src.adventure import startAdventureScript
+from src.chaos_trial import startChaosTrialScript
+from util.detect_game import detectGame
 
 scripts = {
     '1' : startAdventureScript,
