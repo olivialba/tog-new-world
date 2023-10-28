@@ -1,8 +1,10 @@
 from adventure import startAdventureScript
+from chaos_trial import startChaosTrialScript
 from detect_game import detectGame
 
 scripts = {
-    '1' : startAdventureScript
+    '1' : startAdventureScript,
+    '2' : startChaosTrialScript
 }
 
 def startScript(function, windowTitle):
@@ -20,7 +22,7 @@ def startScript(function, windowTitle):
         
         
 if __name__ == '__main__':
-    choiches = input("\n1 - Auto Adventure\nPlease input your choiche: ")
+    choiches = input("\n1 - Auto Adventure\n2 - Trial of Chaos\nPlease input your choiche: ")
     found = False
     for key in scripts:
         if key == choiches:
