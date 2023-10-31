@@ -13,12 +13,15 @@ def startScript(function, windowTitle):
     '''
     if not windowTitle:
         windowTitle = "POCO F3"
-    region = detectGame(windowTitle)
-    if region:
-        print()
-        function(region)
-    else:
-        print("Phone window not found.")
+    try:
+        region = detectGame(windowTitle)
+        if region:
+            print()
+            function(region)
+        else:
+            input("Phone window not found. Press Enter to close..")
+    except:
+        input("Phone window not found. Press Enter to close..")
         
         
 if __name__ == '__main__':

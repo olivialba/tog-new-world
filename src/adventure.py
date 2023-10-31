@@ -16,5 +16,6 @@ def startAdventureScript(region):
     
     MAKE SURE that you are on the team building screen of adventure with the red "Enter Battle" button on the bottom right.
     '''
-    input("Go into adventure mode and then press Enter to continue..")
+    print("Go into the Adventure by clicking on Adventure in the game lobby, then")
+    input("press Enter to continue..")
     startScript(region, continue_buttons)    
