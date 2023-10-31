@@ -1,6 +1,7 @@
 from src.togScript import startScript
 
 continue_buttons = {
+    'Power Level': 'imgs/adventure/power_level_ok.png',
     'Challenge': 'imgs/chaos_trial/challenge.png',
     'Enter Battle': 'imgs/adventure/enter_battle.png',
     'Next Trial': 'imgs/chaos_trial/next_trial.png',
