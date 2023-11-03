@@ -1,6 +1,7 @@
-from src.adventure import startAdventureScript
-from src.chaos_trial import startChaosTrialScript
-from util.detect_game import detectGame
+from gamemodes.adventure import *
+from gamemodes.chaos_trial import *
+from gameutils.detect_game import *
+from gamemodes.togScript import *
 
 scripts = {
     '1' : startAdventureScript,
@@ -19,18 +20,18 @@ def startScript(function, windowTitle):
             print()
             function(region)
         else:
-            input("Phone window not found. Press Enter to close..")
-    except:
-        input("Phone window not found. Press Enter to close..")
+            input('Region not available')
+    except Exception as e:
+        print(e)
+        input('\nEncountered Error. Press Enter to close..')
         
         
-if __name__ == '__main__':
-    choiches = input("\n1 - Auto Adventure\n2 - Trial of Chaos\nPlease input your choiche: ")
-    found = False
-    for key in scripts:
-        if key == choiches:
-            found = True
-            windowTitle = input("Please input the title of the game window: ")
-            startScript(scripts[key], windowTitle)
-    if found is False:
-        print('Invalid selection.')
+choiches = input("\n1 - Auto Adventure\n2 - Trial of Chaos\nPlease input your choiche: ")
+found = False
+for key in scripts:
+    if key == choiches:
+        found = True
+        windowTitle = input("Please input the title of the game window: ")
+        startScript(scripts[key], windowTitle)
+if found is False:
+    input('Invalid selection. Press Enter to close..')

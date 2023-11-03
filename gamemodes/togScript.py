@@ -1,4 +1,4 @@
-from pynput.mouse import Button, Controller
+from pynput.mouse._win32 import Button, Controller
 import pyautogui
 import time
 
@@ -64,4 +64,4 @@ def startScript(region, selection):
     resetStartTime()
     while True:
         detect_button(region, selection)
-        time.sleep(5.5)      
+        time.sleep(5)      
