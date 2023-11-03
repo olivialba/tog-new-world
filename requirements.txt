@@ -1,0 +1,4 @@
+py2exe==0.13.0.1
+PyGetWindow==0.0.9
+PyAutoGUI==0.9.54
+pynput==1.7.6
