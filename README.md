@@ -7,7 +7,7 @@ Can automatically scale the tower in adventure, complete the trial of chaos.
 ## Install
 - Download [Scrcpy](https://github.com/Genymobile/scrcpy) to connect and allow your phone to be controlled by your computer. Any other program that have that functionality (or similar) will work too, like Bluestack.
   - Good and fast tutorial for installing and using Scrcpy: [link](https://www.youtube.com/watch?v=2y35SPOaNWk&t=193s)
-  
+
 - Now to install the script, either you have python or you don't.
 
 ### I have Python
@@ -15,8 +15,9 @@ Can automatically scale the tower in adventure, complete the trial of chaos.
 - Start the main file with `start.bat`
 
 ### I don't have Python
-- Download the folder named `ToG New World`, inside you will find an .exe called 'ToG Start.exe', use that to start the script.
+- Download the zip file named `ToG New World.zip` from this link: [zip file](https://drive.google.com/file/d/1F5G3BawV5rTvlbfGnSyq4JRhD-UGGztW/view), extract it and inside you will find an .exe called 'ToG Start.exe', use that to start the script.
     - The folder is pretty heavy since it needs to include a copy of the Python interpreter and the necessary libraries.
+    - Standalone was created using Nuitka
 
 ## How to use
 Start the script, either through the 'start.bat' or the 'ToG Start.exe' depending if you have python.
