@@ -15,12 +15,12 @@ Can automatically scale the tower in adventure, do the Trial of Chaos and Guardi
 - Start the main file with `ToG Start.bat`
 
 ### I don't have Python
-- Download the zip file named `ToG New World.zip` from this link: [zip file](https://drive.google.com/file/d/1JuqNsu5R-qfHCaV_Op3EgdiDPxidGMM2/view), extract it and inside you will find an .exe called 'ToG Start.exe', use that to start the script.
+- Download the zip file named `ToG.Start.zip` from here [Release v2.0](https://github.com/olivialba/tog-new-world/releases/tag/v2.0), extract it and inside you will find an .exe called 'ToG Start.exe', use that to start the script.
     - The folder is pretty heavy since it needs to include a copy of the Python interpreter and the necessary libraries.
     - Standalone was created using Nuitka
 
 ## How to use
-Start the script, either through the 'start.bat' or the 'ToG Start.exe' depending if you have python.
+Start the script, either through the 'ToG Start.bat' or the 'ToG Start.exe' depending if you have python.
 - First, it will ask enter the name of the window broadcasting your phone and/or game, not the name of the program, the window's.
     - For example: in this case I would input "POCO F3"
     - ![image info](./imgs/info/title.png)
